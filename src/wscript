@@ -1,0 +1,15 @@
+#!/usr/bin/env python2
+# encoding: utf-8
+
+def build(bld):
+    bld(
+            features    = 'cxx includes',
+            source      = 'months.cpp',
+            target      = 'months',
+            use         = ['stdc++'])
+
+    bld(
+            features    = 'cxx cxxprogram',
+            source      = 'main.cpp',
+            target      = 'rainfall',
+            use         = ['months'])
