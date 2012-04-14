@@ -29,8 +29,7 @@ vector<int> gen_rain_vals() {
         return rain_vals; }
     else {
         cerr << "Invalid Input" << endl;
-        exit(-1); }
-}
+        exit(-1); }}
 #else
 vector<int> gen_rain_vals() {
     int vals[12] = { 9,5,8,7,5,6,7,9,9,6,8,10 };
