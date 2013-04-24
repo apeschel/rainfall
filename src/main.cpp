@@ -14,6 +14,7 @@ using namespace std;
 
 #ifndef DEBUG
 vector<int> gen_rain_vals() {
+    // Expect input in the form "1,2,3,4,5,6,7,8,9,10,11,12"
     string str_in;
     cin >> str_in;
 
