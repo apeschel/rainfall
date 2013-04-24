@@ -18,7 +18,10 @@ vector<int> gen_rain_vals() {
     cin >> str_in;
 
     vector<string> SplitVec;
-    boost::split(SplitVec, str_in, boost::is_any_of(","), boost::token_compress_on );
+    boost::split(SplitVec,
+                 str_in,
+                 boost::is_any_of(","),
+                 boost::token_compress_on );
 
     vector<int> rain_vals;
     for (string str_val: SplitVec) {
